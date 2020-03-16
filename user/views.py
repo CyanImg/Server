@@ -1,8 +1,12 @@
 from django.http import HttpResponse
-from django.contrib.auth.hashers import check_password,make_password
+from django.contrib.auth.hashers import check_password, make_password
 from user.models import user
 from django.core.exceptions import ObjectDoesNotExist
 import json
+
+
+def sendPic(pic):
+    return HttpResponse(pic, content_type="image/png")
 
 
 def login(request):
@@ -18,11 +22,11 @@ def login(request):
                     "data": {
                         "user_id": find_user.id,
                         "group_id": find_user.group_id,
-                        # "small_pic": find_user.small_pic,
                         "address_id": find_user.address_id,
                         "usercomment_id": find_user.usercomment_id,
                     }
                 }
+                sendPic(find_user.small_pic)
             elif get_username is None or get_password is None:
                 response = {
                     "error_code": 10001,
@@ -58,7 +62,8 @@ def register(request):
                 "message": "user already exists",
             }
         elif user.objects.filter(user_name=get_username).count() == 0:
-            user.objects.create(user_name=get_username, user_password=make_password(get_password), user_school=get_schoolname,
+            user.objects.create(user_name=get_username, user_password=make_password(get_password),
+                                user_school=get_schoolname,
                                 email=get_email)
             response = {
                 "error_code": 10000,
