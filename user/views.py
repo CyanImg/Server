@@ -26,7 +26,7 @@ def login(request):
                         "usercomment_id": find_user.usercomment_id,
                     }
                 }
-                sendPic(find_user.small_pic)
+                #sendPic(find_user.small_pic)
             elif get_username is None or get_password is None:
                 response = {
                     "error_code": 10001,
