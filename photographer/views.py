@@ -73,7 +73,7 @@ def register(request):
             photographer.objects.create(graph_name=get_username, graph_password=make_password(get_password),
                                         graph_school=get_schoolname,
                                         email=get_email,graph_identification=get_identification,
-                                        experience=get_experience,album=get_album)
+                                        experience=get_experience,album=get_album,graph_device=get_device)
             response = {
                 "error_code": 10000,
                 "message": "user created",

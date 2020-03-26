@@ -21,3 +21,4 @@ class photographer(models.Model):
     graphlikecomment_id = models.IntegerField(null=True)
     graph_rename = models.CharField(null=True,max_length=20)
     graph_repassword = models.CharField(null=True,max_length=256)
+    graph_device = models.CharField(null=True,max_length=20)
