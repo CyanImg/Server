@@ -10,15 +10,11 @@ def sendPic(pic):
 
 
 def login(request):
-    get_email = request.GET['email']
+    get_username = request.GET['username']
     get_password = request.GET['password']
-    response = {
-        "error_code": 20000,
-        "message": "service not available",
-    }
     try:
         try:
-            find_user = user.objects.get(email=get_email)
+            find_user = user.objects.get(user_name=get_username)
             if check_password(get_password, find_user.user_password):
                 response = {
                     "error_code": 10000,
@@ -30,11 +26,11 @@ def login(request):
                         "usercomment_id": find_user.usercomment_id,
                     }
                 }
-                # sendPic(find_user.small_pic)
-            elif get_email is None or get_password is None:
+                #sendPic(find_user.small_pic)
+            elif get_username is None or get_password is None:
                 response = {
                     "error_code": 10001,
-                    "message": "blank email or password",
+                    "message": "blank username or password",
                 }
             elif not check_password(get_password, find_user.user_password):
                 response = {

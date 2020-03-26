@@ -13,7 +13,7 @@ class photographer(models.Model):
     email = models.EmailField(default="xxx@xxx.com")
     graph_identification = models.CharField(max_length=18)
     experience = models.CharField(max_length=1000)
-    album = models.ImageField(null=True)
+    album = models.ImageField()
     pic = models.ImageField(null=True)
     small_pic = models.ImageField(null=True)
     reg_time = models.DateField(default=now())
