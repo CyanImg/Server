@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/user/login',user_views.login),
     path('api/user/register',user_views.register),
-    path('api/photographer/identify',photographer_views.test)
+    path('api/photographer/login',photographer_views.login)
 ]
