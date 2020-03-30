@@ -1,8 +1,17 @@
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password, make_password
 from user.models import user
+from photographer.models import photographer
+from other.models import other
 from django.core.exceptions import ObjectDoesNotExist
 import json
+
+
+def merge_dicts(*dict_args):
+    result = {}
+    for dictionary in dict_args:
+        result.update(dictionary)
+    return result
 
 
 def sendPic(pic):
@@ -78,4 +87,97 @@ def register(request):
             "error_code": 20000,
             "message": "service not available",
         }
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+
+def search(request):
+    get_graphername = request.GET.get('graphername', None)
+    get_schoolname = request.GET.get('schoolname', None)
+    get_othername = request.GET.get('othername', None)
+
+    if get_graphername is not None:
+        try:
+            find_photographer = photographer.objects.get(graph_name=get_graphername)
+            response = {
+                "error_code": 10000,
+                "data": {
+                    "graph_id": find_photographer.graph_id(),
+                    "graphcomment_id": find_photographer.graphcomment_id,
+                    "graph_name": find_photographer.graph_name,
+                    "graph_school": find_photographer.graph_name,
+                    "email": find_photographer.email,
+                    # "graph_identification":find_photographer.graph_identification,
+                    "experience": find_photographer.experience,
+                    "last_login_time": str(find_photographer.last_login_time),
+                },
+                "message": "photographer found",
+            }
+        except ObjectDoesNotExist:
+            find_photographer = photographer.objects.filter(graph_name__contains=get_graphername)
+            if len(find_photographer) > 0:
+                response = {"error_code": 10000, "datalist": {}}
+                for i in find_photographer:
+                    newdata = {str(i.graph_id()):{
+                        "graph_id": i.graph_id(),
+                        "graphcomment_id": i.graphcomment_id,
+                        "graph_name": i.graph_name,
+                        "graph_school": i.graph_name,
+                        "email": i.email,
+                        # "graph_identification":i.graph_identification,
+                        "experience": i.experience,
+                        "last_login_time": str(i.last_login_time),
+                    }}
+                    response['datalist'].update(newdata)
+                response.update({"message": "photographer found"})
+            else:
+                response = {
+                    "error_code": 10000,
+                    "message": "no such photographer",
+                }
+            # sendPic(find_photographer.pic)
+            # sendPic(find_photographer.album)
+
+    else:
+        if get_othername is not None:
+            try:
+                find_other = other.objects.get(other_name=get_othername)
+                response = {
+                    "error_code": 10000,
+                    "data": {
+                        "graph_id": find_other.graph_id(),
+                        "graphcomment_id": find_other.graphcomment_id,
+                        "graph_name": find_other.graph_name,
+                        "graph_school": find_other.graph_name,
+                        "email": find_other.email,
+                        # "graph_identification":find_other.graph_identification,
+                        "experience": find_other.experience,
+                        "last_login_time": str(find_other.last_login_time),
+                    },
+                    "message": "photographer found",
+                }
+            except ObjectDoesNotExist:
+                find_other = photographer.objects.filter(other_name__contains=get_graphername)
+                if len(find_other) > 0:
+                    response = {"error_code": 10000, "datalist": {}}
+                    for i in find_other:
+                        newdata = {str(i.graph_id()):{
+                            "graph_id": i.graph_id(),
+                            "graphcomment_id": i.graphcomment_id,
+                            "graph_name": i.graph_name,
+                            "graph_school": i.graph_name,
+                            "email": i.email,
+                            # "graph_identification":i.graph_identification,
+                            "experience": i.experience,
+                            "last_login_time": str(i.last_login_time),
+                        }}
+                        response['datalist'].update(newdata)
+                    response.update({"message": "other found"})
+                else:
+                    response = {
+                        "error_code": 10000,
+                        "message": "no such other",
+                    }
+                # sendPic(find_other.pic)
+                # sendPic(find_other.album)
+
     return HttpResponse(json.dumps(response), content_type="application/json")

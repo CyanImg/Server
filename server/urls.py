@@ -23,5 +23,6 @@ urlpatterns = [
     path('api/user/login',user_views.login),
     path('api/user/register',user_views.register),
     path('api/photographer/login',photographer_views.login),
-    path('api/photographer/register',photographer_views.register)
+    path('api/photographer/register',photographer_views.register),
+    path('api/user/search', user_views.search)
 ]
