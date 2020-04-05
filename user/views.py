@@ -23,7 +23,10 @@ def sendPic(pic):
 
 def getPic(request):
     username = request.POST['username']
-    find_user = user.objects.get(user_name=username)
+    try:
+        find_user = user.objects.get(user_name=username)
+    except ObjectDoesNotExist:
+        return HttpResponse("No such user")
     if request.method == 'POST':
         img = request.POST['img']
         try:
@@ -36,7 +39,9 @@ def getPic(request):
             find_user.save()
         except:
             return HttpResponse("icon update failed")
-    return HttpResponse("icon updated")
+        return HttpResponse("icon updated")
+    else:
+        return HttpResponse("only POST is accepted")
 
 def login(request):
     get_email = request.GET['email']
