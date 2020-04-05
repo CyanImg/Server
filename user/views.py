@@ -4,7 +4,10 @@ from user.models import user
 from photographer.models import photographer
 from other.models import other
 from django.core.exceptions import ObjectDoesNotExist
+from django.conf import settings
+from django.core.files import File
 import json
+import os
 
 
 def merge_dicts(*dict_args):
@@ -17,6 +20,28 @@ def merge_dicts(*dict_args):
 def sendPic(pic):
     return HttpResponse(pic, content_type="image/png")
 
+
+def getPic(request):
+    username = request.POST['username']
+    try:
+        find_user = user.objects.get(user_name=username)
+    except ObjectDoesNotExist:
+        return HttpResponse("No such user")
+    if request.method == 'POST':
+        img = request.POST['img']
+        try:
+            savepath = os.path.join(settings.MEDIA_ROOT,username)
+            with open(savepath,"w") as f:
+                save_icon = File(f)
+                save_icon.write(img)
+                print("saved")
+            find_user.pic = username
+            find_user.save()
+        except:
+            return HttpResponse("icon update failed")
+        return HttpResponse("icon updated")
+    else:
+        return HttpResponse("only POST is accepted")
 
 def login(request):
     get_email = request.GET['email']
@@ -117,7 +142,7 @@ def search(request):
             if len(find_photographer) > 0:
                 response = {"error_code": 10000, "datalist": {}}
                 for i in find_photographer:
-                    newdata = {str(i.graph_id()):{
+                    newdata = {str(i.graph_id()): {
                         "graph_id": i.graph_id(),
                         "graphcomment_id": i.graphcomment_id,
                         "graph_name": i.graph_name,
@@ -160,7 +185,7 @@ def search(request):
                 if len(find_other) > 0:
                     response = {"error_code": 10000, "datalist": {}}
                     for i in find_other:
-                        newdata = {str(i.graph_id()):{
+                        newdata = {str(i.graph_id()): {
                             "graph_id": i.graph_id(),
                             "graphcomment_id": i.graphcomment_id,
                             "graph_name": i.graph_name,
