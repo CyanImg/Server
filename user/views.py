@@ -31,11 +31,11 @@ def getPic(request):
         img = request.POST['img']
         try:
             savepath = os.path.join(settings.MEDIA_ROOT,username)
-            with open(savepath,"wb") as f:
+            with open(savepath,"w") as f:
                 save_icon = File(f)
                 save_icon.write(img)
                 print("saved")
-            find_user.pic = savepath
+            find_user.pic = username
             find_user.save()
         except:
             return HttpResponse("icon update failed")
