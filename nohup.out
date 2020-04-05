@@ -1,0 +1,1159 @@
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Invalid HTTP_HOST header: '47.103.117.214:65535'. You may need to add '47.103.117.214' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Mar/2020 11:07:03] "GET / HTTP/1.1" 400 60681
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Invalid HTTP_HOST header: '47.103.117.214:65535'. You may need to add '47.103.117.214' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Mar/2020 11:08:06] "GET / HTTP/1.1" 400 60803
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Invalid HTTP_HOST header: '47.103.117.214:65535'. You may need to add '47.103.117.214' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Mar/2020 11:08:49] "GET / HTTP/1.1" 400 60817
+Invalid HTTP_HOST header: '47.103.117.214:65535'. You may need to add '47.103.117.214' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Mar/2020 11:08:52] "GET / HTTP/1.1" 400 60817
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Not Found: /
+[23/Mar/2020 11:09:33] "GET / HTTP/1.1" 404 2283
+Not Found: /
+[23/Mar/2020 11:12:08] "GET / HTTP/1.1" 404 2283
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Mar/2020 13:02:18] "GET / HTTP/1.0" 400 58772
+Not Found: /
+[23/Mar/2020 16:53:37] "GET / HTTP/1.1" 404 2283
+Not Found: /WEB_VMS/LEVEL15/
+[23/Mar/2020 16:57:05] "POST /WEB_VMS/LEVEL15/ HTTP/1.1" 404 2350
+Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 54, in register
+    get_username = request.GET['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[23/Mar/2020 23:54:34] "GET /api/user/register HTTP/1.1" 500 70200
+Not Found: /favicon.ico
+[23/Mar/2020 23:54:35] "GET /favicon.ico HTTP/1.1" 404 2334
+Not Found: /
+[24/Mar/2020 00:44:23] "GET / HTTP/1.1" 404 2283
+Not Found: /WEB_VMS/LEVEL15/
+[24/Mar/2020 05:45:03] "POST /WEB_VMS/LEVEL15/ HTTP/1.1" 404 2350
+/usr/local/lib/python3.5/dist-packages/django/utils/duration.py changed, reloading.
+Performing system checks...
+
+March 23, 2020 - 11:09:31
+Django version 2.2.4, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 10, in main
+    from django.core.management import execute_from_command_line
+ImportError: No module named 'django.core'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 16, in main
+    ) from exc
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Not Found: /
+[26/Mar/2020 04:46:18] "GET / HTTP/1.1" 404 2280
+Not Found: /favicon.ico
+[26/Mar/2020 04:46:18] "GET /favicon.ico HTTP/1.1" 404 2331
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Not Found: /
+[26/Mar/2020 04:49:26] "GET / HTTP/1.1" 404 2402
+/root/Server/server/urls.py changed, reloading.
+Performing system checks...
+
+March 26, 2020 - 04:49:19
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Not Found: /
+[26/Mar/2020 04:54:24] "GET / HTTP/1.1" 404 2405
+/root/Server/photographer/views.py changed, reloading.
+Performing system checks...
+
+March 26, 2020 - 04:54:06
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Mar/2020 16:18:29] "GET / HTTP/1.0" 400 58512
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Mar/2020 16:18:34] "OPTIONS / HTTP/1.0" 400 58540
+[26/Mar/2020 16:18:37] code 400, message Bad request version ('RTSP/1.0')
+[26/Mar/2020 16:18:37] "OPTIONS / RTSP/1.0" 400 -
+[26/Mar/2020 16:18:44] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[26/Mar/2020 16:18:44] "  (rþ          |                    " 400 -
+[26/Mar/2020 16:18:49] code 400, message Bad HTTP/0.9 request type ('\x00')
+[26/Mar/2020 16:18:49] "          versionbind   " 400 -
+[26/Mar/2020 16:18:49] code 400, message Bad request syntax ('HELP')
+[26/Mar/2020 16:18:49] "HELP" 400 -
+[26/Mar/2020 16:18:49] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+[26/Mar/2020 16:18:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[26/Mar/2020 16:18:54] code 400, message Bad request syntax ('\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00')
+[26/Mar/2020 16:18:54] "   ¤ÿSMBr    @              @     PC NETWORK PROGRAM 1.0 MICROSOFT NETWORKS 1.03 MICROSOFT NETWORKS 3.0 LANMAN1.0 LM1.2X002 Samba NT LANMAN 1.0 NT LM 0.12 " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[26/Mar/2020 16:18:55] "GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0" 400 58821
+[26/Mar/2020 16:18:55] code 400, message Bad request syntax ('\x01default')
+[26/Mar/2020 16:18:55] "default" 400 -
+[26/Mar/2020 16:18:55] code 400, message Bad request version ('SIP/2.0')
+[26/Mar/2020 16:18:55] "OPTIONS sip:nm SIP/2.0" 400 -
+[26/Mar/2020 16:19:00] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+[26/Mar/2020 16:19:00] " Z     6,   ÿ      :                4æ           (CONNECT_DATA=(COMMAND=version))" 400 -
+[26/Mar/2020 16:19:00] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+[26/Mar/2020 16:19:00] "  " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Mar/2020 16:19:00] "GET /?CAVIT HTTP/1.1" 400 58837
+Not Found: /sdk
+[26/Mar/2020 16:22:00] "POST /sdk HTTP/1.1" 404 2433
+Not Found: /nmaplowercheck1585239720
+[26/Mar/2020 16:22:14] "GET /nmaplowercheck1585239720 HTTP/1.1" 404 2495
+Not Found: /HNAP1
+[26/Mar/2020 16:22:14] "GET /HNAP1 HTTP/1.1" 404 2438
+Not Found: /evox/about
+[26/Mar/2020 16:22:14] "GET /evox/about HTTP/1.1" 404 2453
+[26/Mar/2020 16:22:26] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\r\x99\xad\x03¹@"\x03m\x02\x183\x8bF\x7fË\x01ó\x0b\x82*\x03M\x99j\x17\x80×¨xÓU Æï\x19/¹>Oû¦\x08L\t£Ý]²\x1b\x8f\x93»ìØ\x99rXn¦\x96Ã00j\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À\'\x00g\x00@ÀrÀv\x00¾\x00½À')
+[26/Mar/2020 16:22:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /
+[26/Mar/2020 16:22:37] "GET / HTTP/1.1" 404 2399
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[27/Mar/2020 06:37:50] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x90g\x04\x80±3Å¨}0ñ7\x84;¯¿óXQ®£ØR4\x17\x87ýn!\t\x11è dr\x11î\x88°A)s\x0c\x0e\x8c1¨\t\x17L\x95;\x8a:)Ë\x9b\x89a\x1b\x9cgQw\x80\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+[27/Mar/2020 06:37:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[27/Mar/2020 06:37:50] "GET / HTTP/1.1" 400 59185
+/root/Server/user/views.py changed, reloading.
+Performing system checks...
+
+March 26, 2020 - 04:58:00
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('101.133.224.19', 39648)
+----------------------------------------
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Internal Server Error: /api/user/search
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 183, in search
+    return HttpResponse(json.dumps(response), content_type="application/json")
+UnboundLocalError: local variable 'response' referenced before assignment
+[30/Mar/2020 05:00:57] "GET /api/user/search HTTP/1.1" 500 62207
+Not Found: /favicon.ico
+[30/Mar/2020 05:00:58] "GET /favicon.ico HTTP/1.1" 404 2571
+Internal Server Error: /api/user/search
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 183, in search
+    return HttpResponse(json.dumps(response), content_type="application/json")
+UnboundLocalError: local variable 'response' referenced before assignment
+[30/Mar/2020 05:01:19] "GET /api/user/search?username=p HTTP/1.1" 500 62571
+Internal Server Error: /api/user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 22, in login
+    get_email = request.GET['email']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'email'
+[30/Mar/2020 05:03:01] "GET /api/user/login?username=prj&password=prj HTTP/1.1" 500 71284
+[30/Mar/2020 05:03:10] "GET /api/user/login?email=prj&password=prj HTTP/1.1" 200 50
+[30/Mar/2020 05:03:20] "GET /api/user/login?email=icbmicbm@yandex.ocm&password=prj HTTP/1.1" 200 50
+[30/Mar/2020 05:03:25] "GET /api/user/login?email=icbmicbm@yandex.com&password=prj HTTP/1.1" 200 50
+[30/Mar/2020 05:03:29] "GET /api/user/login?email=icbmicbm@yandex.com&password=admin HTTP/1.1" 200 126
+Internal Server Error: /api/user/search
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 183, in search
+    return HttpResponse(json.dumps(response), content_type="application/json")
+UnboundLocalError: local variable 'response' referenced before assignment
+[30/Mar/2020 05:03:48] "GET /api/user/search HTTP/1.1" 500 62207
+[30/Mar/2020 05:27:15] "GET /api/user/search?graphername=prj HTTP/1.1" 200 223
+Not Found: /
+[30/Mar/2020 06:36:05] "GET / HTTP/1.1" 404 2520
+[30/Mar/2020 08:20:02] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[30/Mar/2020 08:20:02] "  /*à     Cookie: mstshash=Administr" 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[30/Mar/2020 20:24:23] "GET / HTTP/1.0" 400 58548
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[30/Mar/2020 20:24:24] "OPTIONS / HTTP/1.0" 400 58576
+[30/Mar/2020 20:24:25] code 400, message Bad request version ('RTSP/1.0')
+[30/Mar/2020 20:24:25] "OPTIONS / RTSP/1.0" 400 -
+[30/Mar/2020 20:24:30] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[30/Mar/2020 20:24:30] "  (rþ          |                    " 400 -
+[30/Mar/2020 20:24:35] code 400, message Bad HTTP/0.9 request type ('\x00')
+[30/Mar/2020 20:24:35] "          versionbind   " 400 -
+[30/Mar/2020 20:24:35] code 400, message Bad request syntax ('HELP')
+[30/Mar/2020 20:24:35] "HELP" 400 -
+[30/Mar/2020 20:24:35] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+[30/Mar/2020 20:24:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[30/Mar/2020 20:24:41] code 400, message Bad request syntax ('\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00')
+[30/Mar/2020 20:24:41] "   ¤ÿSMBr    @              @     PC NETWORK PROGRAM 1.0 MICROSOFT NETWORKS 1.03 MICROSOFT NETWORKS 3.0 LANMAN1.0 LM1.2X002 Samba NT LANMAN 1.0 NT LM 0.12 " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[30/Mar/2020 20:24:41] "GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0" 400 58857
+[30/Mar/2020 20:24:41] code 400, message Bad request syntax ('\x01default')
+[30/Mar/2020 20:24:41] "default" 400 -
+[30/Mar/2020 20:24:41] code 400, message Bad request version ('SIP/2.0')
+[30/Mar/2020 20:24:41] "OPTIONS sip:nm SIP/2.0" 400 -
+[30/Mar/2020 20:24:46] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+[30/Mar/2020 20:24:46] " Z     6,   ÿ      :                4æ           (CONNECT_DATA=(COMMAND=version))" 400 -
+[30/Mar/2020 20:24:47] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+[30/Mar/2020 20:24:47] "  " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[30/Mar/2020 20:24:47] "GET /?CAVIT HTTP/1.1" 400 58873
+Not Found: /nmaplowercheck1585600066
+[30/Mar/2020 20:27:46] "GET /nmaplowercheck1585600066 HTTP/1.1" 404 2610
+Not Found: /HNAP1
+[30/Mar/2020 20:27:46] "GET /HNAP1 HTTP/1.1" 404 2553
+Not Found: /sdk
+[30/Mar/2020 20:27:49] "POST /sdk HTTP/1.1" 404 2548
+[30/Mar/2020 20:27:57] code 400, message Bad request version ('ÙñÑ\x8a')
+[30/Mar/2020 20:27:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /evox/about
+[30/Mar/2020 20:28:00] "GET /evox/about HTTP/1.1" 404 2568
+Not Found: /
+[30/Mar/2020 20:28:24] "GET / HTTP/1.1" 404 2514
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 03:26:37] "GET / HTTP/1.0" 400 58548
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 03:26:42] "OPTIONS / HTTP/1.0" 400 58576
+[02/Apr/2020 03:26:46] code 400, message Bad request version ('RTSP/1.0')
+[02/Apr/2020 03:26:46] "OPTIONS / RTSP/1.0" 400 -
+[02/Apr/2020 03:26:51] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[02/Apr/2020 03:26:51] "  (rþ          |                    " 400 -
+[02/Apr/2020 03:26:56] code 400, message Bad HTTP/0.9 request type ('\x00')
+[02/Apr/2020 03:26:56] "          versionbind   " 400 -
+[02/Apr/2020 03:26:57] code 400, message Bad request syntax ('HELP')
+[02/Apr/2020 03:26:57] "HELP" 400 -
+[02/Apr/2020 03:26:57] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+[02/Apr/2020 03:26:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[02/Apr/2020 03:27:02] code 400, message Bad request syntax ('\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00')
+[02/Apr/2020 03:27:02] "   ¤ÿSMBr    @              @     PC NETWORK PROGRAM 1.0 MICROSOFT NETWORKS 1.03 MICROSOFT NETWORKS 3.0 LANMAN1.0 LM1.2X002 Samba NT LANMAN 1.0 NT LM 0.12 " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[02/Apr/2020 03:27:02] "GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0" 400 58857
+[02/Apr/2020 03:27:02] code 400, message Bad request syntax ('\x01default')
+[02/Apr/2020 03:27:02] "default" 400 -
+[02/Apr/2020 03:27:03] code 400, message Bad request version ('SIP/2.0')
+[02/Apr/2020 03:27:03] "OPTIONS sip:nm SIP/2.0" 400 -
+[02/Apr/2020 03:27:08] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+[02/Apr/2020 03:27:08] " Z     6,   ÿ      :                4æ           (CONNECT_DATA=(COMMAND=version))" 400 -
+[02/Apr/2020 03:27:08] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+[02/Apr/2020 03:27:08] "  " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 03:27:09] "GET /?CAVIT HTTP/1.1" 400 58873
+Not Found: /sdk
+[02/Apr/2020 03:29:26] "POST /sdk HTTP/1.1" 404 2548
+Not Found: /nmaplowercheck1585798166
+[02/Apr/2020 03:29:41] "GET /nmaplowercheck1585798166 HTTP/1.1" 404 2610
+Not Found: /HNAP1
+[02/Apr/2020 03:29:41] "GET /HNAP1 HTTP/1.1" 404 2553
+Not Found: /evox/about
+[02/Apr/2020 03:29:41] "GET /evox/about HTTP/1.1" 404 2568
+[02/Apr/2020 03:29:53] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x8d.3xÙÈÎG\x1fÅogz\x95H´1L6\x05;\x84}\x9bQvºG-n÷\x97 Z\x0c\x7f<ãlÓKÁwg\x8e´³Â\xadü_.X;¡M\x00$\x8d\x86\x91ûN\x13T\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+[02/Apr/2020 03:29:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /
+[02/Apr/2020 03:29:58] "GET / HTTP/1.1" 404 2514
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 07:20:17] "GET / HTTP/1.1" 400 59431
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /explicit_not_exist_path
+[02/Apr/2020 07:20:17] "GET /explicit_not_exist_path HTTP/1.1" 400 59684
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /index.html
+[02/Apr/2020 07:20:18] "GET /index.html HTTP/1.1" 400 59541
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 07:40:24] "GET / HTTP/1.1" 400 59429
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /explicit_not_exist_path
+[02/Apr/2020 07:40:24] "GET /explicit_not_exist_path HTTP/1.1" 400 59682
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /index.html
+[02/Apr/2020 07:40:25] "GET /index.html HTTP/1.1" 400 59539
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /index.php
+[02/Apr/2020 07:40:29] "GET /index.php HTTP/1.1" 400 59528
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /index.jsp
+[02/Apr/2020 07:40:31] "GET /index.jsp HTTP/1.1" 400 59528
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[02/Apr/2020 07:40:33] "GET /admin/ HTTP/1.1" 400 59495
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[02/Apr/2020 07:40:35] "GET /favicon.ico HTTP/1.1" 400 59550
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+[02/Apr/2020 07:40:38] "GET /robots.txt HTTP/1.1" 400 59539
+[02/Apr/2020 07:40:42] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[02/Apr/2020 07:40:42] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[02/Apr/2020 07:40:42] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 58, in get_response
+    return self.serve(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 51, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/views.py", line 37, in serve
+    raise Http404("'%s' could not be found" % path)
+django.http.response.Http404: 'admin/img/icon-no.gif' could not be found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 66, in __call__
+    return super().__call__(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/wsgi.py", line 141, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 60, in get_response
+    return response_for_exception(request, e)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 44, in response_for_exception
+    response = debug.technical_404_response(request, exc)
+  File "/usr/local/lib/python3.5/dist-packages/django/views/debug.py", line 509, in technical_404_response
+    return HttpResponseNotFound(t.render(c), content_type='text/html')
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/usr/local/lib/python3.5/dist-packages/django/http/request.py", line 195, in build_absolute_uri
+    location = self._current_scheme_host + location
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.5/dist-packages/django/http/request.py", line 205, in _current_scheme_host
+    return '{}://{}'.format(self.scheme, self.get_host())
+  File "/usr/local/lib/python3.5/dist-packages/django/http/request.py", line 111, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+[02/Apr/2020 07:40:42] "GET /static/admin/img/icon-no.gif HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 58, in get_response
+    return self.serve(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 51, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/views.py", line 37, in serve
+    raise Http404("'%s' could not be found" % path)
+django.http.response.Http404: 'admin/js/LICENSE-JQUERY.txt' could not be found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 66, in __call__
+    return super().__call__(environ, start_response)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/wsgi.py", line 141, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/staticfiles/handlers.py", line 60, in get_response
+    return response_for_exception(request, e)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 44, in response_for_exception
+    response = debug.technical_404_response(request, exc)
+  File "/usr/local/lib/python3.5/dist-packages/django/views/debug.py", line 509, in technical_404_response
+    return HttpResponseNotFound(t.render(c), content_type='text/html')
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/usr/local/lib/python3.5/dist-packages/django/http/request.py", line 195, in build_absolute_uri
+    location = self._current_scheme_host + location
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.5/dist-packages/django/http/request.py", line 205, in _current_scheme_host
+    return '{}://{}'.format(self.scheme, self.get_host())
+  File "/usr/local/lib/python3.5/dist-packages/django/http/request.py", line 111, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+[02/Apr/2020 07:40:42] "GET /static/admin/js/LICENSE-JQUERY.txt HTTP/1.1" 500 59
+[02/Apr/2020 07:40:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[02/Apr/2020 07:40:42] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[02/Apr/2020 07:40:42] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /wcm/
+[02/Apr/2020 07:40:42] "GET /wcm/ HTTP/1.1" 400 59473
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /phpMyAdmin/
+[02/Apr/2020 07:40:45] "GET /phpMyAdmin/ HTTP/1.1" 400 59550
+Invalid HTTP_HOST header: 'swpu.ctfer.vip:65535'. You may need to add 'swpu.ctfer.vip' to ALLOWED_HOSTS.
+Bad Request: /phpmyadmin/
+[02/Apr/2020 07:40:47] "GET /phpmyadmin/ HTTP/1.1" 400 59550
+[02/Apr/2020 12:24:54] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03~')
+[02/Apr/2020 12:24:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 12:24:54] "GET / HTTP/1.1" 400 59220
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Apr/2020 13:00:33] "GET / HTTP/1.0" 400 58545
+[02/Apr/2020 15:24:52] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[02/Apr/2020 15:24:52] "  /*à     Cookie: mstshash=Administr" 400 -
+[03/Apr/2020 03:53:49] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[03/Apr/2020 03:53:49] "  /*à     Cookie: mstshash=Administr" 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[03/Apr/2020 05:30:30] "GET / HTTP/1.0" 400 58548
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[03/Apr/2020 05:30:35] "OPTIONS / HTTP/1.0" 400 58576
+[03/Apr/2020 05:30:39] code 400, message Bad request version ('RTSP/1.0')
+[03/Apr/2020 05:30:39] "OPTIONS / RTSP/1.0" 400 -
+[03/Apr/2020 05:30:45] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[03/Apr/2020 05:30:45] "  (rþ          |                    " 400 -
+[03/Apr/2020 05:30:50] code 400, message Bad HTTP/0.9 request type ('\x00')
+[03/Apr/2020 05:30:50] "          versionbind   " 400 -
+[03/Apr/2020 05:30:50] code 400, message Bad request syntax ('HELP')
+[03/Apr/2020 05:30:50] "HELP" 400 -
+[03/Apr/2020 05:30:50] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+[03/Apr/2020 05:30:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[03/Apr/2020 05:30:55] code 400, message Bad request syntax ('\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00')
+[03/Apr/2020 05:30:55] "   ¤ÿSMBr    @              @     PC NETWORK PROGRAM 1.0 MICROSOFT NETWORKS 1.03 MICROSOFT NETWORKS 3.0 LANMAN1.0 LM1.2X002 Samba NT LANMAN 1.0 NT LM 0.12 " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[03/Apr/2020 05:30:55] "GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0" 400 58857
+[03/Apr/2020 05:30:55] code 400, message Bad request syntax ('\x01default')
+[03/Apr/2020 05:30:55] "default" 400 -
+[03/Apr/2020 05:30:56] code 400, message Bad request version ('SIP/2.0')
+[03/Apr/2020 05:30:56] "OPTIONS sip:nm SIP/2.0" 400 -
+[03/Apr/2020 05:31:01] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+[03/Apr/2020 05:31:01] " Z     6,   ÿ      :                4æ           (CONNECT_DATA=(COMMAND=version))" 400 -
+[03/Apr/2020 05:31:01] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+[03/Apr/2020 05:31:01] "  " 400 -
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[03/Apr/2020 05:31:01] "GET /?CAVIT HTTP/1.1" 400 58873
+Not Found: /sdk
+[03/Apr/2020 05:34:02] "POST /sdk HTTP/1.1" 404 2548
+[03/Apr/2020 05:34:12] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03å\x12FÝÆ-°å\x8eû\x87C¼c}\x87Ùk%xY\x9c³nJØm\x87\x8apIï')
+[03/Apr/2020 05:34:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /nmaplowercheck1585892041
+[03/Apr/2020 05:34:16] "GET /nmaplowercheck1585892041 HTTP/1.1" 404 2610
+Not Found: /HNAP1
+[03/Apr/2020 05:34:16] "GET /HNAP1 HTTP/1.1" 404 2553
+Not Found: /evox/about
+[03/Apr/2020 05:34:17] "GET /evox/about HTTP/1.1" 404 2568
+Not Found: /
+[03/Apr/2020 05:34:35] "GET / HTTP/1.1" 404 2514
+Internal Server Error: /api/user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 22, in login
+    get_email = request.GET['email']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'email'
+[03/Apr/2020 07:46:54] "GET /api/user/login?username=prj&password=prj HTTP/1.1" 500 71283
+Not Found: /favicon.ico
+[03/Apr/2020 07:46:55] "GET /favicon.ico HTTP/1.1" 404 2571
+[03/Apr/2020 07:47:03] "GET /api/user/login?email=prj&password=prj HTTP/1.1" 200 50
+[03/Apr/2020 07:47:12] "GET /api/user/login?email=icbmicbm@yandex.com&password=prj HTTP/1.1" 200 50
+[03/Apr/2020 07:47:16] "GET /api/user/login?email=icbmicbm@yandex.com&password=admin HTTP/1.1" 200 126
+[03/Apr/2020 07:51:46] "GET /api/user/search?graphername=p HTTP/1.1" 200 400
+[03/Apr/2020 14:33:05] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03UR\x9d¶\x1bÖ±\x1b\x15\t6ãÙ]n·r3\x83.'\x15óAx×Í\x8a°¼d\x9e ä\x07z\x17õåY\x08Pôº²ñK\x10~\x87GÄ3ïÎâ\xa0\x0eþK\x8dcR3\x89\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+[03/Apr/2020 14:33:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Invalid HTTP_HOST header: 'iZuf6d4jieedp7vrlhlbcyZ:65535'. You may need to add 'izuf6d4jieedp7vrlhlbcyz' to ALLOWED_HOSTS.
+Bad Request: /
+[03/Apr/2020 14:33:05] "GET / HTTP/1.1" 400 59220
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Invalid HTTP_HOST header: '47.103.117.214:65535'. You may need to add '47.103.117.214' to ALLOWED_HOSTS.
+Bad Request: /
+[05/Apr/2020 07:57:25] "GET / HTTP/1.1" 400 60238
+Invalid HTTP_HOST header: '47.103.117.214:65535'. You may need to add '47.103.117.214' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[05/Apr/2020 07:57:25] "GET /favicon.ico HTTP/1.1" 400 60160
+/root/Server/server/settings.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 07:55:12
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Not Found: /
+[05/Apr/2020 07:58:51] "GET / HTTP/1.1" 404 2636
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 07:59:05] "GET /api/user/seticon HTTP/1.1" 500 69819
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:00:25] "GET /api/user/seticon HTTP/1.1" 500 68654
+Not Found: /api/user/seticon ip:46549/
+[05/Apr/2020 08:14:43] "POST /api/user/seticon%20ip:46549/ HTTP/1.1" 404 2735
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:15:29] "GET /api/user/seticon HTTP/1.1" 500 69954
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:18:32] "POST /api/user/seticon HTTP/1.1" 500 68836
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:26:23] "POST /api/user/seticon HTTP/1.1" 500 68833
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:27:58] "POST /api/user/seticon HTTP/1.1" 500 76020
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:39:44] "POST /api/user/seticon HTTP/1.1" 500 68833
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:49:52] "POST /api/user/seticon HTTP/1.1" 500 76020
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 08:56:39] "POST /api/user/seticon HTTP/1.1" 500 68239
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 09:15:32] "POST /api/user/seticon?username=null&img=File:%20'/storage/emulated/0/Download/flagCache/com.example.flutteraa.png' HTTP/1.1" 500 69477
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 09:21:40] "POST /api/user/seticon HTTP/1.1" 500 68239
+[05/Apr/2020 09:32:12] "POST /api/user/seticon HTTP/1.1" 200 12
+[05/Apr/2020 09:33:27] "POST /api/user/seticon HTTP/1.1" 200 12
+[05/Apr/2020 09:39:30] "POST /api/user/seticon HTTP/1.1" 200 12
+[05/Apr/2020 09:39:51] "POST /api/user/seticon HTTP/1.1" 200 12
+Not Found: /api/user/seticon',
+[05/Apr/2020 09:41:30] "GET /api/user/seticon', HTTP/1.1" 404 2720
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 25, in getPic
+    username = request.POST['username']
+  File "/usr/local/lib/python3.5/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+[05/Apr/2020 09:45:25] "img=adoijfaosidjf /api/user/seticon HTTP/1.1" 500 68287
+[05/Apr/2020 09:46:40] "POST /api/user/seticon HTTP/1.1" 200 12
+[05/Apr/2020 09:47:00] "POST /api/user/seticon HTTP/1.1" 200 18
+[05/Apr/2020 09:47:28] "POST /api/user/seticon HTTP/1.1" 200 18
+Not Found: /
+[05/Apr/2020 09:48:00] "GET / HTTP/1.1" 404 2636
+[05/Apr/2020 09:48:47] "POST /api/user/seticon HTTP/1.1" 200 18
+[05/Apr/2020 09:51:54] "POST /api/user/seticon HTTP/1.1" 200 18
+[05/Apr/2020 09:55:00] "POST /api/user/seticon HTTP/1.1" 200 18
+/root/Server/user/views.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 07:58:50
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+/root/Server/server/settings.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 09:56:48
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+[05/Apr/2020 09:58:05] "POST /api/user/seticon HTTP/1.1" 200 18
+/root/Server/user/views.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 09:58:02
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+[05/Apr/2020 09:59:19] "POST /api/user/seticon HTTP/1.1" 200 18
+[05/Apr/2020 09:59:44] "POST /api/user/seticon HTTP/1.1" 200 18
+/root/Server/user/views.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 09:59:17
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+~/Server/media/prj
+~/Server/media/prj
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 35, in getPic
+    with open(savepath,"w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '~/Server/media/prj'
+[05/Apr/2020 10:02:26] "POST /api/user/seticon HTTP/1.1" 500 61383
+/root/Server/server/settings.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 10:02:23
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+~/Server/media/prj
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+Internal Server Error: /api/user/seticon
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Server/user/views.py", line 35, in getPic
+    with open(savepath,"w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'root/Server/media/prj'
+[05/Apr/2020 10:03:41] "POST /api/user/seticon HTTP/1.1" 500 61398
+/root/Server/server/settings.py changed, reloading.
+Performing system checks...
+
+April 05, 2020 - 10:03:38
+Django version 2.2.11, using settings 'server.settings'
+Starting development server at http://0.0.0.0:65535/
+Quit the server with CONTROL-C.
+root/Server/media/prj
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+other.other.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+photographer.photographer.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+user.user.reg_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 3 issues (0 silenced).
+[05/Apr/2020 10:04:42] "POST /api/user/seticon HTTP/1.1" 200 12
+[05/Apr/2020 10:06:03] "POST /api/user/seticon HTTP/1.1" 200 12

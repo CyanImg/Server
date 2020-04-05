@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MEDIA_ROOT = "/Users/icbm/Desktop/Server/media"
+MEDIA_ROOT = "/root/Server/media"
 MEDIA_URL = "media/"
 
 
@@ -27,7 +27,7 @@ SECRET_KEY = '412x)v4f$6ugjryjbckp-qwx&k3l8h^u(==y&sxw28f&1pxryg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["47.103.117.214"]
 
 
 # Application definition

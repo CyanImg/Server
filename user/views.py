@@ -29,16 +29,17 @@ def getPic(request):
         return HttpResponse("No such user")
     if request.method == 'POST':
         img = request.POST['img']
-        try:
-            savepath = os.path.join(settings.MEDIA_ROOT,username)
-            with open(savepath,"w") as f:
-                save_icon = File(f)
-                save_icon.write(img)
-                print("saved")
-            find_user.pic = username
-            find_user.save()
-        except:
-            return HttpResponse("icon update failed")
+        # try:
+        savepath = os.path.join(settings.MEDIA_ROOT,username)
+        print(savepath)
+        with open(savepath,"w") as f:
+            save_icon = File(f)
+            save_icon.write(img)
+            print("saved")
+        find_user.pic = username
+        find_user.save()
+       # except:
+       #     return HttpResponse("icon update failed")
         return HttpResponse("icon updated")
     else:
         return HttpResponse("only POST is accepted")
