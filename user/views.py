@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password, make_password
-from user.models import user
+from user.models import user,comments
 from photographer.models import photographer
 from other.models import other
 from django.core.exceptions import ObjectDoesNotExist
@@ -206,3 +206,17 @@ def search(request):
                 # sendPic(find_other.album)
 
     return HttpResponse(json.dumps(response), content_type="application/json")
+
+
+def makeComment(request):
+    get_user = request.GET['username']
+    content = request.GET['content']
+    u = user.objects.get(user_name=get_user)
+    user_name = u.user_name
+    user_school = u.user_school
+    group_id = u.group_id
+    try:
+        comments.objects.create(group_id=group_id,user_name=user_name,user_school=user_school,comment_content=content)
+        return HttpResponse("comment updated")
+    except:
+        return HttpResponse("error")

@@ -13,8 +13,8 @@ class user(models.Model):
     user_password = models.CharField(default="123456", max_length=256)
     email = models.EmailField(default="xxx@xxx.com")
     user_school = models.CharField(default="SWPU", max_length=20)
-    pic = models.ImageField(null=True,upload_to='icon')
-    small_pic = models.ImageField(null=True,upload_to='icon_small')
+    pic = models.ImageField(null=True, upload_to='icon')
+    small_pic = models.ImageField(null=True, upload_to='icon_small')
     reg_time = models.DateField(default=now())
     last_login_time = models.DateField(auto_now=True)
     userlikecomment_id = models.IntegerField(null=True)
@@ -30,8 +30,9 @@ class comments(models.Model):
     user_name = models.CharField(max_length=20)
     graph_name = models.CharField(max_length=20)
     user_school = models.CharField(max_length=20)
-    graph_school = models.CharField(max_length=20)
-    photo = models.ImageField
+    graph_school = models.CharField(max_length=20,null=True)
+    comment_content = models.CharField(max_length=144)
+    photo = models.ImageField(null=True)
 
 
 class like(models.Model):
