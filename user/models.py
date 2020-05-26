@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils.timezone import now
 
 
 class user(models.Model):
@@ -15,7 +14,7 @@ class user(models.Model):
     user_school = models.CharField(default="SWPU", max_length=20)
     pic = models.ImageField(null=True, upload_to='icon')
     small_pic = models.ImageField(null=True, upload_to='icon_small')
-    reg_time = models.DateField(default=now())
+    reg_time = models.DateField(auto_now_add=True)
     last_login_time = models.DateField(auto_now=True)
     userlikecomment_id = models.IntegerField(null=True)
     user_rename = models.CharField(null=True, max_length=20)
@@ -30,7 +29,7 @@ class comments(models.Model):
     user_name = models.CharField(max_length=20)
     graph_name = models.CharField(max_length=20)
     user_school = models.CharField(max_length=20)
-    graph_school = models.CharField(max_length=20,null=True)
+    graph_school = models.CharField(max_length=20, null=True)
     comment_content = models.CharField(max_length=144)
     photo = models.ImageField(null=True)
 
@@ -38,3 +37,21 @@ class comments(models.Model):
 class like(models.Model):
     user_id = models.IntegerField
     likecomment_id = models.IntegerField
+
+
+class order(models.Model):
+    def order_id(self):
+        return self.id
+
+    user_name = models.CharField(max_length=20)
+    graph_name = models.CharField(max_length=20)
+    order_time = models.DateField(auto_now_add=True)
+    total = models.IntegerField(max_length=10)
+    update_time = models.DateField(auto_now=True)
+    order_status = models.BooleanField(default=False)  # False == not finished
+    payment_status = models.BooleanField(default=False)  # False == not paid
+    meet_time = models.DateField(auto_now_add=False,auto_now=False,null=False)
+    address = models.CharField(max_length=256)
+    tel = models.CharField(max_length=11)
+    user_school = models.CharField(max_length=20)
+    graph_school = models.CharField(max_length=20)

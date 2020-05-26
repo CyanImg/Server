@@ -1,11 +1,12 @@
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password, make_password
-from user.models import user,comments
+from user.models import user,comments,order
 from photographer.models import photographer
 from other.models import other
 from django.core.exceptions import ObjectDoesNotExist
 from django.conf import settings
 from django.core.files import File
+from django.utils.timezone import now
 import json
 import os
 
@@ -220,3 +221,30 @@ def makeComment(request):
         return HttpResponse("comment updated")
     except:
         return HttpResponse("error")
+
+
+def makeOrder(request):
+    get_user = request.GET['username']
+    get_graph = request.GET['graphname']
+    # order_time = now()
+    total = request.GET['total']
+    # update_time = now()
+    # order_status = False
+    # payment_status = False
+    meet_time = request.GET['meettime']
+    address = request.GET['address']
+    tel = request.GET['tel']
+    try:
+        find_user = user.objects.filter(user_name=get_user)
+        find_photographer = photographer.objects.get(graph_name=get_graph)
+        order.objects.create(user_name=find_user.user_name,graph_name=find_photographer.graph_name,total=total,update_time=now(),meet_time=meet_time,address=address,tel=tel,user_school=find_user.user_school,graph_school=find_photographer.graph_school)
+        response = {
+            "error_code": 10000,
+            "message": "order added",
+        }
+    except ObjectDoesNotExist:
+        response = {
+            "error_code": 10000,
+            "message": "no such user/grapher",
+        }
+    return HttpResponse(json.dumps(response), content_type="application/json")
