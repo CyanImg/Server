@@ -235,7 +235,7 @@ def makeOrder(request):
     address = request.GET['address']
     tel = request.GET['tel']
     try:
-        find_user = user.objects.filter(user_name=get_user)
+        find_user = user.objects.get(user_name=get_user)
         find_photographer = photographer.objects.get(graph_name=get_graph)
         order.objects.create(user_name=find_user.user_name,graph_name=find_photographer.graph_name,total=total,update_time=now(),meet_time=meet_time,address=address,tel=tel,user_school=find_user.user_school,graph_school=find_photographer.graph_school)
         response = {
@@ -246,5 +246,40 @@ def makeOrder(request):
         response = {
             "error_code": 10000,
             "message": "no such user/grapher",
+        }
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+
+def changeOrder(request):
+    get_order = request.GET['order']
+    get_total = request.GET['total']
+    get_order_status = request.GET['status']
+    get_payment_status = request.GET['paymentstatus']
+    get_meet_time = request.GET['meettime']
+    get_address = request.GET['address']
+    get_tel = request.GET['tel']
+    try:
+        find_order = order.objects.get(order_id=get_order)
+        if get_total is not None:
+            find_order.total = get_total
+        if get_order_status is not None:
+            find_order.order_status = get_order_status
+        if get_payment_status is not None:
+            find_order.payment_status = get_order_status
+        if get_meet_time is not None:
+            find_order.meet_time = get_meet_time
+        if get_address is not None:
+            find_order.address = get_address
+        if get_tel is not None:
+            find_order.tel = get_tel
+        find_order.save()
+        response = {
+            "error_code": 10000,
+            "message": "order updated",
+        }
+    except ObjectDoesNotExist:
+        response = {
+            "error_code": 10000,
+            "message": "no such order",
         }
     return HttpResponse(json.dumps(response), content_type="application/json")
