@@ -25,5 +25,10 @@ urlpatterns = [
     path('api/photographer/login',photographer_views.login),
     path('api/photographer/register',photographer_views.register),
     path('api/user/search', user_views.search),
-    path('api/user/seticon',user_views.getPic)
+    path('api/user/seticon',user_views.getPic),
+    path('api/user/sendcode',user_views.send_forget_code()),
+    path('api/user/forget',user_views.forget()),
+    path('api/user/comment',user_views.makeComment()),
+    path('api/user/order',user_views.makeOrder()),
+    path('api/user/updateorder',user_views.changeOrder())
 ]

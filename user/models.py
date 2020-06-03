@@ -1,5 +1,13 @@
 from django.db import models
+from random import randint
 
+
+def make_forget_code():
+    dic = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRSTUVWXYZ0123456789'
+    code = ''
+    for i in range(5):
+        code += dic[randint(0, len(dic) - 1)]
+    return code
 
 class user(models.Model):
     def user_id(self):
@@ -19,6 +27,7 @@ class user(models.Model):
     userlikecomment_id = models.IntegerField(null=True)
     user_rename = models.CharField(null=True, max_length=20)
     user_repassword = models.CharField(null=True, max_length=20)
+    forget_code = models.CharField(null=False, max_length=5,default=make_forget_code())
 
 
 class comments(models.Model):

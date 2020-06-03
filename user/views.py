@@ -1,12 +1,15 @@
+from smtplib import SMTPServerDisconnected
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password, make_password
-from user.models import user,comments,order
+from user.models import user,comments,order,make_forget_code
 from photographer.models import photographer
 from other.models import other
 from django.core.exceptions import ObjectDoesNotExist
 from django.conf import settings
 from django.core.files import File
 from django.utils.timezone import now
+from django.core.mail import send_mail
+from server.settings import EMAIL_FROM
 import json
 import os
 
@@ -114,6 +117,54 @@ def register(request):
             "message": "service not available",
         }
     return HttpResponse(json.dumps(response), content_type="application/json")
+
+
+def send_forget_code(request):
+    get_user = request.GET['user']
+    find_user = user.objects.get(user_name=get_user)
+    forget_code = find_user.forget_code
+    mail = find_user.user_email
+    try:
+        title = "找回您的CyanImg密码"
+        body = "使用以下救援代码来重设您的CyanImg密码:"+forget_code
+        if send_mail(title,body,EMAIL_FROM,[mail]) == 1:
+            response = {
+                "error_code":10000,
+                "message":"email sent"
+            }
+        else:
+            response = {
+                "error_code":20000,
+                "message":"email not sent"
+            }
+    except SMTPServerDisconnected:
+        response = {
+            "error_code":20000,
+            "message":"Connection unexpectedly closed"
+        }
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+
+def forget(request):
+    get_user = request.GET['user']
+    get_forget_code = request.GET['forget']
+    new_password = request.GET['newpassword']
+    find_user = user.objects.get(user_name=get_user)
+    forget_code = find_user.forget_code
+    if get_forget_code == forget_code:
+        find_user.update(user_password=make_password(new_password))
+        find_user.update(forget_code=make_forget_code())
+        response = {
+            "error_code":10000,
+            "message":"password reset"
+        }
+    else:
+        response = {
+            "error_code":10000,
+            "message":"incorrect code"
+        }
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
 
 
 def search(request):
