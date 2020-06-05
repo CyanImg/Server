@@ -47,6 +47,7 @@ def getPic(request):
     else:
         return HttpResponse("only POST is accepted")
 
+
 def login(request):
     get_email = request.GET['email']
     get_password = request.GET['password']
