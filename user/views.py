@@ -108,10 +108,26 @@ def register(request):
             user.objects.create(user_name=get_username, user_password=make_password(get_password),
                                 user_school=get_schoolname,
                                 email=get_email)
-            response = {
-                "error_code": 10000,
-                "message": "user created",
-            }
+            find_user = user.objects.get(user_name=get_username)
+            verify_code = find_user.verify_code
+            try:
+                title = "您的邮箱正在被用于注册CyanImg"
+                body = "点击以下链接来验证您的邮箱"+""
+                if send_mail(title, body, EMAIL_FROM, [get_email]) == 1:
+                    response = {
+                        "error_code": 10000,
+                        "message": "email sent"
+                    }
+                else:
+                    response = {
+                        "error_code": 20000,
+                        "message": "email not sent"
+                    }
+            except:
+                response = {
+                    "error_code": 20000,
+                    "message": "service not available",
+                }
     except:
         response = {
             "error_code": 20000,
@@ -146,6 +162,31 @@ def send_forget_code(request):
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 
+def verify(request):
+    get_user = request.GET['user']
+    get_verify_code = request.GET['verify']
+    try:
+        find_user = user.objects.get(user_name=get_user)
+        verify_code = find_user.verify_code
+        if get_verify_code == verify_code and not find_user.is_verified:
+            find_user.update(is_verified=True)
+            response = {
+                "error_code":10000,
+                "message":"verified"
+            }
+        else:
+            response = {
+                "error_code":10000,
+                "message":"incorrect verify code or verified"
+            }
+    except:
+        response = {
+            "error_code":20000,
+            "message":"service not available"
+        }
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+
 def forget(request):
     get_user = request.GET['user']
     get_forget_code = request.GET['forget']
@@ -165,7 +206,6 @@ def forget(request):
             "message":"incorrect code"
         }
     return HttpResponse(json.dumps(response), content_type="application/json")
-
 
 
 def search(request):
