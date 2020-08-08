@@ -35,8 +35,8 @@ class user(models.Model):
     userlikecomment_id = models.IntegerField(null=True)
     user_rename = models.CharField(null=True, max_length=20)
     user_repassword = models.CharField(null=True, max_length=20)
-    forget_code = models.CharField(null=False, max_length=5,default=make_forget_code())
-    verify_code = models.CharField(null=False,max_length=5,default=make_verify_code())
+    forget_code = models.CharField(null=False, max_length=5,default=make_forget_code)
+    verify_code = models.CharField(null=False,max_length=5,default=make_verify_code)
     is_verified = models.BooleanField(default=False)
 
 
@@ -65,7 +65,7 @@ class order(models.Model):
     user_name = models.CharField(max_length=20)
     graph_name = models.CharField(max_length=20)
     order_time = models.DateField(auto_now_add=True)
-    total = models.IntegerField(max_length=10)
+    total = models.IntegerField()
     update_time = models.DateField(auto_now=True)
     order_status = models.BooleanField(default=False)  # False == not finished
     payment_status = models.BooleanField(default=False)  # False == not paid
