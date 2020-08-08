@@ -30,5 +30,6 @@ urlpatterns = [
     path('api/user/forget',user_views.forget),
     path('api/user/comment',user_views.makeComment),
     path('api/user/order',user_views.makeOrder),
-    path('api/user/updateorder',user_views.changeOrder)
+    path('api/user/updateorder',user_views.changeOrder),
+    path('api/user/verify',user_views.verify)
 ]
