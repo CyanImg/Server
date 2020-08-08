@@ -112,7 +112,7 @@ def register(request):
             verify_code = find_user.verify_code
             try:
                 title = "您的邮箱正在被用于注册CyanImg"
-                body = "点击以下链接来验证您的邮箱"+"http://47.103.117.214:65535/api/user/verify?username="+get_username+"&verify="+verify_code
+                body = "点击以下链接来验证您的邮箱"+"http://47.103.117.214:65535/api/user/verify?user="+get_username+"&verify="+verify_code
                 if send_mail(title, body, EMAIL_FROM, [get_email]) == 1:
                     response = {
                         "error_code": 10000,
