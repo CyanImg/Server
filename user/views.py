@@ -169,7 +169,8 @@ def verify(request):
         find_user = user.objects.get(user_name=get_user)
         verify_code = find_user.verify_code
         if get_verify_code == verify_code and not find_user.is_verified:
-            find_user.update(is_verified=True)
+            find_user.is_verified = True
+            find_user.save()
             response = {
                 "error_code":10000,
                 "message":"verified"
@@ -179,7 +180,8 @@ def verify(request):
                 "error_code":10000,
                 "message":"incorrect verify code or verified"
             }
-    except:
+    except Exception as e:
+        print(e)
         response = {
             "error_code":20000,
             "message":"service not available"
