@@ -137,10 +137,10 @@ def register(request):
 
 
 def send_forget_code(request):
-    get_user = request.GET['user']
-    find_user = user.objects.get(user_name=get_user)
+    get_email = request.GET['email']
+    find_user = user.objects.get(email=get_email)
     forget_code = find_user.forget_code
-    mail = find_user.user_email
+    mail = get_email
     try:
         title = "找回您的CyanImg密码"
         body = "使用以下救援代码来重设您的CyanImg密码:"+forget_code
