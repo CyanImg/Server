@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from user import views as user_views
 from photographer import views as photographer_views
+from other import views as other_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +32,7 @@ urlpatterns = [
     path('api/user/comment',user_views.makeComment),
     path('api/user/order',user_views.makeOrder),
     path('api/user/updateorder',user_views.changeOrder),
-    path('api/user/verify',user_views.verify)
+    path('api/user/verify',user_views.verify),
+    path('api/other/login',other_views.login),
+    path('api/other/register',other_views.register)
 ]
