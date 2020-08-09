@@ -1,0 +1,12 @@
+GET http://localhost:8000/api/user/sendcode?email=icbmicbm@yandex.com
+Accept: application/json
+
+###
+GET http://localhost:8000/api/user/register?username=abc&password=abc&schoolname=swpu&email=icbmicbm@yandex.com
+Accept: application/json
+
+###
+GET http://localhost:8000/api/user/login?email=icbmicbm@yandex.com&password=prj
+Accept: application/json
+
+###

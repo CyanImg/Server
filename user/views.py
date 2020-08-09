@@ -311,10 +311,24 @@ def makeComment(request):
     user_school = u.user_school
     group_id = u.group_id
     try:
-        comments.objects.create(group_id=group_id,user_name=user_name,user_school=user_school,comment_content=content)
-        return HttpResponse("comment updated")
-    except:
-        return HttpResponse("error")
+        comments.objects.create(user_name=user_name,user_school=user_school,comment_content=content)
+        response = {
+            "error_code":10000,
+            "message":"comment updated",
+            "data":{
+                "username":user_name,
+                "userschool":user_school,
+                "commentcontent":content,
+            }
+        }
+        return HttpResponse(json.dumps(response),content_type="application/json")
+    except Exception as e:
+        print(e)
+        response = {
+            "error_code": 10000,
+            "message": "comment failed",
+        }
+        return HttpResponse(json.dumps(response),content_type="application/json")
 
 
 def makeOrder(request):
